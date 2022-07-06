@@ -13,9 +13,9 @@ export function Post() {
             <strong>Taiuan Pagini</strong>
             <span>Web Developer</span>
           </div>
-
-          <time title='11 de maio as 08:00 horas' dateTime='2022-05-11 08:00:00'>Publicado há 1h</time>
         </div>
+        
+        <time title='11 de maio as 08:00 horas' dateTime='2022-05-11 08:00:00'>Publicado há 1h</time>
       </header>
 
       <div className={styles.content}>
