@@ -1,4 +1,7 @@
 import React from 'react'
+import { Avatar } from '../Avatar';
+import { Comment } from '../Comment';
+import { FormComment } from '../FormComment';
 
 import styles from './Post.module.scss';
 
@@ -7,7 +10,7 @@ export function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src="https://github.com/taiuanpagini.png" />
+        <Avatar src="https://github.com/taiuanpagini.png" />
 
           <div className={styles.authorInfo}>
             <strong>Taiuan Pagini</strong>
@@ -30,6 +33,15 @@ export function Post() {
           <a href="">#nlw</a>{' '}
           <a href="">#rocketseat</a>
         </p>
+      </div>
+
+      <FormComment />
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </article>
   )
